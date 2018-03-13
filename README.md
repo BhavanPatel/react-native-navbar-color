@@ -38,21 +38,29 @@ react-native link react-native-navbar-color
 ```
 
 #### Manual
-1. Make sure you include in `MainApplication.java` file.
+1. [`REACT_NATIVE_PROJECT/android/app/src/main/java/PROJECT_ID/MainApplication.java`]
+
+    Make sure you include in `MainApplication.java` file. 
 
     ```
     import com.bhavan.RNNavBarColor.RNNavBarColor;
     ```
 
-2. In the ***getPackages*** method, add the following instantiation to the returned list.
+    In the ***getPackages*** method, add the following instantiation to the returned list.
     ```
     new RNNavBarColor()
     ```
-3. In the `build.gradle` file add inside ***dependencies { .... }***
+
+2. [`REACT_NATIVE_PROJECT/android/app/build.gradle`]
+
+    In the `build.gradle` file add inside ***dependencies { .... }*** 
     ```
     compile project(':react-native-navbar-color')
     ```
-4. In the `settings.gradle` file add 
+
+3. [`REACT_NATIVE_PROJECT/android/settings.gradle`]
+
+    In the `settings.gradle` file add 
     ```
     include ':react-native-navbar-color'
     project(':react-native-navbar-color').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navbar-color/android')
