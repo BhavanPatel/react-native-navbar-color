@@ -1,5 +1,4 @@
-## IN DEVELOPMENT
-
+# React Native Footer Navigation Bar Color
 [![NPM version](https://img.shields.io/npm/v/react-native-navbar-color.svg)](https://www.npmjs.com/package/react-native-navbar-color)
 
 [![GitHub issues](https://img.shields.io/github/issues/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/issues)
@@ -31,11 +30,13 @@ $ npm install --save react-native-navbar-color
 # Linking library
 You need to register package in your app.
 follow steps
+
 #### Automatic
-Try to link library using link command but it may fails sometimes.
+Use react-native link command to link library.
 ```sh
 react-native link react-native-navbar-color
 ```
+
 #### Manual
 1. Make sure you include in `MainApplication.java` file.
 
