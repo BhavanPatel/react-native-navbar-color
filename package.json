@@ -1,0 +1,52 @@
+{
+  "_from": "git+https://github.com/BhavanPatel/react-native-navbar-color.git",
+  "_id": "react-native-navbar-color@0.0.1",
+  "_inBundle": false,
+  "_location": "/react-native-navbar-color",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/BhavanPatel/react-native-navbar-color.git",
+    "rawSpec": "https://github.com/BhavanPatel/react-native-navbar-color.git",
+    "saveSpec": "git+https://github.com/BhavanPatel/react-native-navbar-color.git",
+    "fetchSpec": "https://github.com/BhavanPatel/react-native-navbar-color.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/BhavanPatel/react-native-navbar-color.git#b45848c557761a1b7808d079d8e63ab9bd9fdcf2",
+  "_spec": "https://github.com/BhavanPatel/react-native-navbar-color.git",
+  "_where": "/Users/bhavanpatel/Desktop/PROJECTS/demos/rnnc",
+  "author": {
+    "name": "Bhavan Patel"
+  },
+  "bugs": {
+    "url": "https://github.com/BhavanPatel/react-native-navbar-color/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Module for change color of react-native footer navigation bar in android.",
+  "homepage": "https://github.com/BhavanPatel/react-native-navbar-color#readme",
+  "keywords": [
+    "react-native",
+    "react-native-navbar-color",
+    "navigation-bar",
+    "navbar-color",
+    "footer-navigation",
+    "android",
+    "color"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-navbar-color",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhavanPatel/react-native-navbar-color.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}
