@@ -9,7 +9,7 @@
 
 [![NPM](https://nodei.co/npm/react-native-navbar-color.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-navbar-color/)
 
-# react-native-navbar-color [android only]
+# react-native-navbar-color [android only] [API >= 21]
 
 Simple package that will set footer navigation bar color.
 
