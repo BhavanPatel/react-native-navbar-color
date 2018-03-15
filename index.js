@@ -14,7 +14,9 @@ module.exports = {
       }
    },
    setStatusBarColor: (color, animation) => {
-      return StatusBar.setBackgroundColor(color, animation);
+      if (Platform.OS == 'android') {
+         return StatusBar.setBackgroundColor(color, animation);
+      }
    },
    setStatusBarTheme: (theme, animation) => {
       if (theme == 'light') {
