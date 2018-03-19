@@ -76,11 +76,18 @@ import package from node_modules
 import NavigationBar from 'react-native-navbar-color'
 ```
 
-Call method to set color
+method to **set nav color**
 ```
 NavigationBar.setColor('#ffab8e')
 ```
-
+method to **set statusbar color**
+```
+NavigationBar.setStatusBarColor('#ffab8e',false)
+```
+method to **set statusbar theme**
+```
+NavigationBar.setStatusBarTheme('dark',true)
+```
 
 ### Here it is full example.
 
