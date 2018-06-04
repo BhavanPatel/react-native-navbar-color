@@ -30,6 +30,9 @@ public class RNNavBarColorModule extends ReactContextBaseJavaModule {
     public void setColor(final String color) {
         final Activity activity = getCurrentActivity();
         final int colorInt = Color.parseColor(color);
+        if(activity == null)
+            return;
+        
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
