@@ -1,15 +1,9 @@
-# React Native Footer Navigation Bar Color
-[![NPM version](https://img.shields.io/npm/v/react-native-navbar-color.svg)](https://www.npmjs.com/package/react-native-navbar-color)
-
-[![GitHub issues](https://img.shields.io/github/issues/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/issues)
-
-[![GitHub forks](https://img.shields.io/github/forks/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/network)
-
-[![GitHub stars](https://img.shields.io/github/stars/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/stargazers)
+# React Native Footer Navigation Bar Color and Status Bar
+[![NPM version](https://img.shields.io/npm/v/react-native-navbar-color.svg)](https://www.npmjs.com/package/react-native-navbar-color) [![GitHub issues](https://img.shields.io/github/issues/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/issues) [![GitHub forks](https://img.shields.io/github/forks/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/network) [![GitHub stars](https://img.shields.io/github/stars/BhavanPatel/react-native-navbar-color.svg)](https://github.com/BhavanPatel/react-native-navbar-color/stargazers)
 
 [![NPM](https://nodei.co/npm/react-native-navbar-color.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-navbar-color/)
 
-# react-native-navbar-color [android only] [API >= 21]
+# react-native-navbar-color
 
 Simple package that will set footer navigation bar color.
 
@@ -66,6 +60,14 @@ react-native link react-native-navbar-color
     project(':react-native-navbar-color').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navbar-color/android')
     ```
     
+# API
+
+| Method | Parameters  | Default | Type | Description | Platform
+| ------ | ------ |  ------ |------ |------ | ----- |
+| setColor | hexcolor | - | *String* | Navbar color in **hex format** in string| **Android** and **API_Level >=21** |
+| setStatusBarColor| hexcolor, animation | -  , `true` | *String,Boolean* |  Statusbar color in **hex format**, Show animation **true/false** | **Android**|
+| setStatusBarTheme | one of `light`/`dark`/`default` , animation | `default`,`true` | *String*, *Boolean* | Theme of Statusbar Light/Dark/Default in **String**, Show animation **true/false**  | **Android/iOS**|
+
 # Example
 This is how you can set footer navigationbar color in android.
 
@@ -74,11 +76,18 @@ import package from node_modules
 import NavigationBar from 'react-native-navbar-color'
 ```
 
-Call method to set color
+method to **set nav color**
 ```
 NavigationBar.setColor('#ffab8e')
 ```
-
+method to **set statusbar color**
+```
+NavigationBar.setStatusBarColor('#ffab8e',false)
+```
+method to **set statusbar theme**
+```
+NavigationBar.setStatusBarTheme('dark',true)
+```
 
 ### Here it is full example.
 
@@ -88,7 +97,7 @@ import { View, Text } from 'react-native'
 import NavigationBar from 'react-native-navbar-color'
 
 export default class App extends Component {
-    componentWillMount() {
+    componentDidMount() {
         NavigationBar.setColor('#ffab8e')
     }
 
